@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colocando Aúdio</title>
+    <style>
+        body {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>Reproduzindo Aúdio</h1>
+    <p>Vamos aprender a reproduzir aúdios em HTML 5</p>
+    <audio src="audio/Aúdio.mp3" controls>Aúdio</audio>
+    <!--MP3 WAV OGG-->
+    <audio preload="metadata" controls loop>
+        <!--Auto só vai dar como site carregado depois de carregador todo o aúdio, Metadata vai carregar só o nome do arquivo e algumas informações tipo data, duração e none não vai carregar nada, só vai carregar quando o usuario apertar play-->
+        <source src="audio/Aúdio.mp" type="audio/mpeg">
+        <source src="audio/Aúdio.ogg" type="audio/ogg">
+        <source src="audio/Aúdio.wav" type="audio/wav"><!--WAV é mais pesado, sempre tentar usar MP3 e OGG-->
+        <p>Infelizmente não foi possível carregar o aúdio</p>
+        <p>Clique aqui para <a href="audio/Aúdio.mp3">baixar</a> o aúdio</p>
+    </audio>
+</body>
+</html>

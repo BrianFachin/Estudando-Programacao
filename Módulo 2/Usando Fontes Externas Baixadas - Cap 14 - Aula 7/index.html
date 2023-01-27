@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Valentino';
+            src: url('Fontes/NT\ VALENTINO\ \(Personal\ use\).otf') format(opentype), url('Fontes/NT\ VALENTINO\ Italic\ \(Personal\ use\).otf') format(opentype);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Tipos de Format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advance Typography)
+            - svg
+        */
+
+        body {
+            font-family: 'Valentino';
+            font-size: 1em;
+        }
+
+        h1 {
+            font-family: 'Valentino';
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+        
+        p {
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, fuga excepturi! Corporis enim nobis explicabo quaerat laudantium minus atque nihil deserunt ea consectetur similique assumenda nisi animi, reiciendis laboriosam commodi!</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore dolorum repellat non voluptas et ipsum minima accusamus. Soluta corrupti amet dolor tempora nulla est molestias earum aspernatur dignissimos! Velit, vitae.</p>
+</body>
+</html>

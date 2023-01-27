@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        :root {
+            --cor01: rgb(191, 242, 255);
+            --cor02: rgb(117, 227, 255);
+            --cor03: rgb(64, 200, 235);
+            --cor04: rgb(0, 150, 187);
+            --cor05: rgb(0, 132, 165);
+            --cor06: rgb(0, 67, 83);
+
+            --font-apple: system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: var(--font-apple);
+            background-color: var(--cor01);
+        }
+
+        header {
+            background-image: linear-gradient( var(--cor03), var(--cor05));
+            text-align: center;
+            min-height: 120px;
+            padding: 20px 20px 0px 20px;
+        }
+
+        header > h1 {
+            margin-bottom: 15px;
+        }
+
+        header > p {
+            max-width: 1000px;
+            padding-bottom: 10px;
+            margin: auto;
+        }
+
+        nav {
+            background-color: var(--cor05);
+            box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+            min-height: 40px;
+            padding: 10px;
+            text-align: center;
+            margin: auto;
+        }
+
+        nav > a {
+            transition-duration: 0.5s;
+            text-decoration: none;
+            border-radius: 5px;
+            color: white;
+            padding: 10px;
+        }
+
+        nav > a:hover {
+            background-color: var(--cor04);
+            color: var(--cor06);
+        }
+
+        main {
+            background-color: #fff;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding: 20px;
+            min-width: 200px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h1 {
+            padding-bottom: 10px;
+        }
+
+        img {
+            padding-bottom: 15px;
+            padding-top: 20px;
+            max-width: 1000px;
+            display: block;
+            margin: auto;
+            width: 100%; /* Assim */
+        }
+
+        iframe {
+            position: absolute;
+            top: 5%;
+            left: 5%; 
+            width: 90%;
+            height: 90%;
+        }
+
+        div.video {
+            padding-top: 50px;
+            padding-bottom: 55%;
+            position: relative;
+        }
+        
+        main  ul {
+            list-style-position: inside; /*Inside = Dentro - Outside = Fora*/
+            list-style-type: '\2714\00A0';
+            text-align: center;
+            columns: 2;
+        }
+
+        a.externo {
+            text-decoration: none;
+            color: var(--cor03);
+        }
+
+        a.externo::after {
+            content: '\00A0\1F517';
+        }
+
+        .externo:hover {
+                    text-decoration: underline;
+                    color: var(--cor06);
+                }
+
+        .mais-info {
+            padding-top: 40px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Configurações de Header</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, adipisci? Est reprehenderit quisquam, assumenda corporis nihil ea animi nesciunt odit quasi praesentium, voluptates eveniet ab eligendi exercitationem dignissimos expedita laudantium.</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Notícias</a>
+        <a href="#">Curiosidades</a>
+        <a href="#">Fale Conosco</a>
+    </nav>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero animi ipsum, quo, distinctio hic asperiores repudiandae laborum enim alias impedit vitae qui dolores dolore vel ullam amet dolorum voluptatum laboriosam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat eos corrupti unde possimus totam. Nesciunt inventore expedita quisquam corporis, dignissimos ad ab excepturi dicta sint vel magni, modi deserunt praesentium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid laudantium voluptatum est vitae similique cum ex quis quas, corrupti expedita aut numquam consequuntur quo amet consectetur nostrum, eum hic accusantium!</p>
+        <picture>
+            <!-- Ou Assim -->
+            <!-- <source media="(max-width: 1200px)" srcset="Foto-pequena.png"> -->
+            <img src="imagem/capa.png" alt="Luffy"> 
+        <picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero animi ipsum, quo, distinctio hic asperiores repudiandae laborum enim alias impedit vitae qui dolores dolore vel ullam amet dolorum voluptatum laboriosam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat eos corrupti unde possimus totam. Nesciunt inventore expedita quisquam corporis, dignissimos ad ab excepturi dicta sint vel magni, modi deserunt praesentium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid laudantium voluptatum est vitae similique cum ex quis quas, corrupti expedita aut numquam consequuntur quo amet consectetur nostrum, eum hic accusantium!</p>
+        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/8GVhLIlLjQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <ul>
+            <li>Luffy</li>
+            <li>Zoro</li>
+            <li>Nami</li>
+            <li>Usopp</li>
+            <li>Sanji</li>
+            <li>Chopper</li>
+            <li>Nico Robin</li>
+            <li>Franky</li>
+        </ul>
+        <p class="mais-info">Confira mais informações clicando <a href="https://www.aficionados.com.br/tripulacao-luffy-historia-ordem-entrada/" target="_blank" class="externo">aqui</a></p>
+    </main>
+</body>
+</html>

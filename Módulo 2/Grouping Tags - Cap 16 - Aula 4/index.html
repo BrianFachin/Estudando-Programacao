@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f6f5ae;
+            color: #565554;
+            overflow-x: hidden;
+            margin: 0px;
+        }
+
+        .fundo {
+            background-color: white;
+            width: 80%;
+            border-radius: 3px 3px 15px 3px;
+            border: 3px solid #dddc93d7;
+            margin: auto;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2); 
+            /* Deslocamento Horizontal - Deslocamento Vertical - Espalhamento - Sombra*/
+        }
+
+        .conteudo {
+            margin: 10px 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #565554;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2e86ab;
+            margin: 10px 0px;
+        }
+
+        h2 {
+            margin: 10px 0px 15px 0px;
+            color: #2e86ab;
+            text-align: center;
+        }
+
+        p {
+            margin: 10px;
+        }
+
+        .brian {
+            font-weight: bold;
+        }
+
+        .links {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .link {
+            margin-right: 5px;
+        }
+
+        .escritor {
+            text-align: center;
+            margin: 20px 0px 15px 0px;
+        }
+
+        footer {
+            background-color: #2e86ab;
+            text-align: center;
+            padding: 4px 0px;
+        }
+
+        .bola {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            position: relative;
+            top: 50%;
+            transform: translateY(50%);
+            margin-top: auto;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body> <!--Corpo-->
+    <header class="fundo">
+        <main class="conteudo">
+            <header> <!--Cabeçalho-->
+                <h1>Meu site</h1>
+                <nav class="links"> <!--Usado para colocar os links-->
+                    <a class="link" href="#">Home</a>
+                    <a class="link" href="#">Blog</a>
+                    <a class="link" href="#">Sobre</a>
+                    <a class="link" href="#">Info</a>
+                    <a class="link" href="#">Login</a>
+                </nav> <!--Usado para colocar os links-->
+            </header>
+        </main>
+    </header> <!--Cabeçalho-->
+    <header class="fundo">
+        <main class="conteudo"> 
+            <main> <!--Conteúdo principal-->
+                <section id="assuntos"> <!--Seção-->
+
+                </section> <!--Seção-->
+                <section id="noticias"> <!--Seção-->
+                    <article> <!--Artigo-->
+                        <aside> <!--Conteúdo Relativo ao artigo-->
+                            <h2>Notícia sobre o Brasil</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto vitae distinctio quos impedit voluptate, debitis, sapiente ab recusandae sint repellat, aut aliquam ipsa quae dolores beatae quas ullam. Harum, odio.</p>
+                        </aside> <!--Conteúdo Relativo ao artigo-->
+                    </article> <!--Artigo-->
+                    <article> <!--Artigo-->
+                        <p class="escritor">Artigo escrito por <a class="brian" href="">Brian Fachini</a></p>
+                    </article> <!--Artigo-->
+                </section> <!--Seção-->
+            </main> <!--Conteúdo principal-->
+        </main>
+    </header>   
+        <footer> <!--Rodapé-->
+            <p class="desenvolvedor">Desenvolvido por <a class="brian" href="">Brian Fachini</a></p>
+        </footer> <!--Rodapé-->
+    <div class="bola"></div>
+</body> <!--Corpo-->
+</html>
